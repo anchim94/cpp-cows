@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Base.cpp" />
+    <ClCompile Include="Chicken.cpp" />
     <ClCompile Include="Cow.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="main.cpp">
@@ -160,12 +161,15 @@
       </PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Sheep.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base.h" />
+    <ClInclude Include="Chicken.h" />
     <ClInclude Include="Cow.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Sheep.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

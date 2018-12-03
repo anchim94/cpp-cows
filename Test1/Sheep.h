@@ -1,12 +1,12 @@
 #pragma once
 #include "Node.h"
-class Base :
+class Sheep :
 	public Node
 {
 public:
-	Base();
-	virtual ~Base();
-	virtual int weight();
+	Sheep();
+	virtual ~Sheep();
 	virtual void print();
+	virtual int weight();
 };
 

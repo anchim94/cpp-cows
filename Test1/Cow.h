@@ -7,5 +7,6 @@ public:
 	Cow();
 	virtual ~Cow();
 	virtual int weight();
+	virtual void print();
 };
 

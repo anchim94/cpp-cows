@@ -16,14 +16,25 @@ Node::~Node()
 
 void Node::climb(Node* ptr)
 {
-	std::cout << "NEXT: " << next << " PTR: " << ptr << std::endl;
-	if (next != nullptr)
+	if (ptr->weight() > this->weight())
 	{
-		next->climb(ptr);
+		prev->next = ptr;
+		ptr->next = this;
+		ptr->prev = prev;
+		this->prev = ptr;
 	}
 	else
 	{
-		next = ptr;
+		if (next != nullptr)
+		{
+			next->climb(ptr);
+		}
+		else
+		{
+			next = ptr;
+			ptr->prev = this;
+		}
 	}
+
 
 }
